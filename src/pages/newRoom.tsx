@@ -1,3 +1,5 @@
+// import { useAuth } from '../hooks/useAuth'
+
 import { Link } from 'react-router-dom'
 import { Button } from '../components/Button'
 
@@ -7,6 +9,8 @@ import logoImg from '../assets/images/logo.svg'
 import '../styles/auth.scss'
 
 export function NewRoom() {
+  // const { user } = useAuth
+
   return (
     <div id="page-auth">
       <aside>
@@ -20,7 +24,7 @@ export function NewRoom() {
           <img src={logoImg} alt="Letmeask" />
           <h2>Criar uma nova sala</h2>
           <form action="">
-            <input 
+            <input
               type="text"
               placeholder="Nome da sala"
             />
